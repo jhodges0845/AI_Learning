@@ -6,7 +6,7 @@
 
 
 # Activate Virtual Environment
-- Activate virutal environment
+- Activate virtual environment
 ```bash
 	# in Mac/Linux
 	source venv/bin/activate
