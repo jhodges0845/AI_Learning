@@ -1,10 +1,10 @@
-#Setup Virtual Environment
-- ```python 
+# Setup Virtual Environment
+- ```bash 
 	python -m venv venv
 ```
 
-#Activate Virtual Environment
-- ```python
+# Activate Virtual Environment
+- ```bash
 	# in Mac/Linux
 	source venv/bin/activate
 	# Git Bash Windows
@@ -13,20 +13,20 @@
 	venv/Scripts/activate
 ```
 
-#Install Packages ( In Virtual Environment)
+# Install Packages ( In Virtual Environment)
 - Activate virtual evnironment
-- ```python
+- ```bash
 	pip install -r requirements.txt
 ```
 
 # Connect Jupyter Notebooks to Virtual Environment
 - Activate virtual environment
-- ```python
+- ```bash
 	pip install ipykernel
 	python -m ipykernel install --user --name=ai-learning
 ```
 
 # Start Jupyter Notebooks
-- ```python
+- ```bash
 jupyter lab
 ```
