@@ -1,5 +1,8 @@
 numpy
 pandas
 matplotlib
+seaborn
 scikit-learn
-jupyter
+jupyterlab
+tensorflow      # or torch (PyTorch)
+xgboost
