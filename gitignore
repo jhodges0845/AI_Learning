@@ -1,0 +1,200 @@
+# =============================================================================
+# Python / Jupyter Notebook — Machine Learning & AI Project
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# Distribution / packaging
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pytestdebug.log
+
+# mypy / type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyright
+pyrightconfig.json
+
+# -----------------------------------------------------------------------------
+# Jupyter Notebooks
+# -----------------------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Jupyter Notebook output cells (optional — remove if you want to commit output)
+# Uncomment the lines below to strip all cell outputs before committing:
+# *.ipynb
+
+# nbconvert output
+nbconvert_output/
+
+# JupyterLab workspace files
+.jupyter/
+jupyter_execute/
+
+# -----------------------------------------------------------------------------
+# Data Files (usually too large for Git — use DVC or similar)
+# -----------------------------------------------------------------------------
+data/raw/
+data/processed/
+data/interim/
+data/external/
+
+# Common dataset formats
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.npy
+*.npz
+
+# Exceptions — keep small sample/fixture files if needed:
+# !data/samples/*.csv
+
+# -----------------------------------------------------------------------------
+# Model Artifacts & Checkpoints
+# -----------------------------------------------------------------------------
+models/
+checkpoints/
+saved_models/
+*.pt          # PyTorch
+*.pth         # PyTorch
+*.ckpt        # TensorFlow / Lightning checkpoints
+*.pb          # TensorFlow SavedModel
+*.h5          # Keras HDF5 weights
+*.keras       # Keras v3 format
+*.onnx        # ONNX export
+*.joblib      # scikit-learn
+*.bin         # HuggingFace weights
+*.safetensors # HuggingFace safetensors
+
+# MLflow / experiment tracking
+mlruns/
+mlartifacts/
+
+# Weights & Biases
+wandb/
+
+# -----------------------------------------------------------------------------
+# Logs & Outputs
+# -----------------------------------------------------------------------------
+logs/
+runs/         # TensorBoard run logs
+outputs/
+results/
+*.log
+*.out
+
+# TensorBoard
+events.out.tfevents.*
+
+# -----------------------------------------------------------------------------
+# Secrets & Credentials — NEVER commit these
+# -----------------------------------------------------------------------------
+.env
+.env.*
+*.env
+secrets.yaml
+secrets.json
+config/secrets/
+*_key.json
+*_credentials.json
+credentials.json
+token.json
+service_account*.json
+
+# -----------------------------------------------------------------------------
+# OS & Editor
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# Spyder
+.spyderproject.db
+.spyproject
+
+# Rope
+.ropeproject
+
+# -----------------------------------------------------------------------------
+# Miscellaneous
+# -----------------------------------------------------------------------------
+*.tmp
+*.bak
+*.swp
+*.swo
+.Trash-*
