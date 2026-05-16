@@ -25,3 +25,8 @@
 	pip install ipykernel
 	python -m ipykernel install --user --name=ai-learning
 ```
+
+# Start Jupyter Notebooks
+- ```python
+jupyter lab
+```
