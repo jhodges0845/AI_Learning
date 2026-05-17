@@ -19,7 +19,8 @@
 
 # Install Packages ( In Virtual Environment)
 - Activate virtual evnironment
-- ```bash
+- run command to install from requirements.txt 
+```bash
 	pip install -r requirements.txt
 ```
 
