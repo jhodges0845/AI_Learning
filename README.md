@@ -1,5 +1,7 @@
 # AI Learning Lab
 
+![Python Tests](https://github.com/jhodges0845/AI_Learning/actions/workflows/tests.yml/badge.svg)
+
 A hands-on Python repository for learning machine learning by building, testing, and organizing algorithms into a reusable project structure.
 
 Rather than treating machine learning as a collection of isolated notebooks, this project is structured around **supervised learning, unsupervised learning, neural networks, shared utilities, and repeatable demos**. The goal is to understand both the algorithms themselves and how ML code can be organized like maintainable software.
@@ -14,6 +16,7 @@ The most complete implementation today is a reusable **linear regression workflo
 - Evaluate predictions
 - Report R², MSE, and RMSE metrics
 - Visualize the fitted model
+- Validate model behavior with automated tests
 
 The root `main.py` provides a runnable demonstration of that workflow.
 
@@ -47,6 +50,7 @@ Jupyter notebooks are used for experimentation, visualization, and deeper explor
 
 ```text
 AI_Learning/
+├── .github/workflows/tests.yml
 ├── main.py
 ├── supervised/
 │   ├── regression/
@@ -55,6 +59,8 @@ AI_Learning/
 │   └── classification/
 │       ├── logistic_regression.py
 │       └── decision_tree.py
+├── tests/
+│   └── test_linear_regression.py
 ├── unsupervised/
 ├── neural_networks/
 ├── notebooks/
@@ -75,6 +81,7 @@ The emphasis is not only on calling ML libraries, but also on understanding:
 - How model quality is measured
 - How data preparation affects results
 - How ML experiments can become reusable software components
+- How automated testing applies to ML-oriented code
 - How traditional machine learning connects to neural networks and modern AI systems
 
 ## Technology
@@ -87,6 +94,8 @@ The current environment includes:
 - Matplotlib
 - seaborn
 - scikit-learn
+- pytest
+- GitHub Actions
 - JupyterLab
 - TensorFlow
 - XGBoost
@@ -125,13 +134,25 @@ source venv/Scripts/activate
 pip install -r requirements.txt
 ```
 
-### 4. Run the current demo
+### 4. Run the tests
+
+```bash
+pytest -q
+```
+
+### 5. Run the current demo
 
 ```bash
 python main.py
 ```
 
 The demo trains and evaluates the current linear regression implementation and displays the resulting visualization.
+
+## Automated Validation
+
+The repository includes a GitHub Actions workflow that runs the test suite on pushes and pull requests to `main`. This keeps the learning project grounded in the same repeatable validation practices used in production software development.
+
+The current tests cover data generation, reproducibility, train/test splitting, training state, prediction behavior, evaluation metrics, coefficients, and expected failures when an untrained model is used.
 
 ## Jupyter Setup
 
@@ -147,14 +168,14 @@ Select the `ai-learning` kernel from Jupyter when working with notebooks.
 
 ## Project Status
 
-This repository is intentionally iterative. New algorithms will be added as I work through them, with an emphasis on keeping implementations organized, understandable, and reusable instead of accumulating disconnected experiments.
+This repository is intentionally iterative. New algorithms will be added as I work through them, with an emphasis on keeping implementations organized, understandable, tested, and reusable instead of accumulating disconnected experiments.
 
 ## Next Milestones
 
-- Complete polynomial regression
 - Add logistic regression
+- Complete polynomial regression
 - Add decision-tree classification
 - Expand model evaluation examples
 - Add unsupervised-learning experiments
 - Begin neural-network implementations
-- Add tests around reusable model components
+- Expand automated tests as new models are added
